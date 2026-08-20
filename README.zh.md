@@ -14,11 +14,11 @@
 
 1) 在源仓库中构建 chart：`helm package charts/<name>` → 生成 `<name>-<version>.tgz`。
 2) 将 `.tgz` 文件复制到此仓库的 `packages/` 目录下，然后推送到 `main/master` 分支。
-3) 等待 GitHub Actions 完成。包和 `index.yaml` 将在 [https://aishu-technology.github.io/helm-repo/](https://aishu-technology.github.io/helm-repo/) 可用。
+3) 等待 GitHub Actions 完成。包和 `index.yaml` 将在 [https://xxx.github.io/helm-repo/](https://xxx.github.io/helm-repo/) 可用。
 
 ## 客户端使用
 
-- `helm repo add myrepo https://aishu-technology.github.io/helm-repo/`
+- `helm repo add myrepo https://xxx.github.io/helm-repo/`
 - `helm repo update && helm search repo myrepo`
 - `helm install demo myrepo/<chart-name> --version <x.y.z>`
 
